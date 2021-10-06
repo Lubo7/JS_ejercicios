@@ -2,4 +2,5 @@
 // bienvenida por consola. Por ejemplo: si introduzco “Fernando”, me aparezca
 // “Bienvenido Fernando”.
 
-alert('Hola Mundo')
+let nombre = 'Lubo'
+console.log('Bienvenido ' + nombre);

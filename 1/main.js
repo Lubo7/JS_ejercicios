@@ -2,3 +2,12 @@
 //de los dos. Si son iguales indicarlo también. Ves cambiando los valores para
 //comprobar que funciona.
 
+let numero1 = 2;
+let numero2 = 5;
+
+if (numero1 => numero2) {
+    console.log("Numero 1 es mayor o igual que numero2");
+}
+else {
+    console.log("Numero 2 es mayor que numero1");
+}

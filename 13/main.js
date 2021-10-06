@@ -8,4 +8,3 @@
 // /: divide los operandos, este debe dar un resultado con decimales (double)
 // ^: 1o operando como base y 2o como exponente.
 // %: módulo, resto de la división entre operando1 y operando2.
-
