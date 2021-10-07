@@ -8,3 +8,10 @@
 // /: divide los operandos, este debe dar un resultado con decimales (double)
 // ^: 1o operando como base y 2o como exponente.
 // %: módulo, resto de la división entre operando1 y operando2.
+
+let int  = window.prompt('Introduzca el número');
+let string  = window.prompt('Introduzca algun letra/s');
+let operador  = window.prompt('Introduzca + - * / ^ o %');
+
+alert(int + ' ' + operador + ' ' +  string);
+
