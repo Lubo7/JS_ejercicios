@@ -7,6 +7,7 @@ let precioTotal = parseFloat(numero) + parseFloat(numero) * 0.21;
 
 console.log("El precio total es " + precioTotal);
 
-
+let valor1 = parseFloat(prompt("Introduce el precio")); 
+console.log(valor1 * 1.21);
 
 

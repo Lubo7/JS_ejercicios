@@ -5,6 +5,6 @@ a double con parseDouble). Usa la constante PI.*/
 const PI = 3.141592653589;
 let R = prompt("Introduzca R");
 
-console.log("Area es " + PI*R);
+console.log("Area es " + PI * R**2);
 
 

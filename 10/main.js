@@ -3,14 +3,14 @@
 // Al final mostrara la suma de todas las ventas. Piensa que es lo que se repite 
 //y lo que no.
 
-let numero = window.prompt("Cuantos productos vendidos?");
-let precio = parseFloat(numero);
+let numero = prompt('Número de productos vendidos:');
+let valor_num = parseFloat(numero);
 let total = 0;
 
-for (let i = 1; i <= precio; i++) {
-    let suma = window.prompt("Precio del " + i + ". producto: ");
-    total = total + parseFloat(suma);
+for (let i = 1; i <= valor_num; i++) {
+
+    let valor = prompt('Precio del ' + i + 'º producto:');
+    total = total + parseFloat(valor);
 }
 
-console.log("El total es " + total);
-
+alert('El total es '+ total);
