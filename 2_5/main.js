@@ -6,5 +6,13 @@
 // el resto que obtengamos de cada división formara el número binario, 
 // de abajo a arriba.
 
-???? 
 
+const calculaBinario = (numero) => {
+    const resultado = numero.toString(2);
+    return resultado;
+}
+
+let numero = parseInt(prompt("Introduzca un numero"), 10);
+let resultado = calculaBinario(numero);
+
+alert("El resultado es " + resultado);

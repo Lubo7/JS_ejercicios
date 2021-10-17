@@ -3,21 +3,21 @@
 
 let dia = " ";
 
-dia = window.prompt("Que dia es?");
+dia = prompt("Que dia es?");
 
-switch(dia) {
+switch(dia.toLowerCase()) {
     case "lunes":
     case "martes":
     case "miercoles":
     case "jueves": 
     case "viernes": 
-        console.log(dia + " es el dia laboral.");
+        alert(dia + " es el dia laboral.");
         break;
     case "sabado":
     case "domingo":
-        console.log(dia + " es el dia libre.");
+        alert(dia + " es el dia libre.");
         break;
     default:
-        console.log("Para saber si es el dia libre o laboral, escribe el dia en espanol y en minisculas.")
+        alert("Para saber si es el dia libre o laboral, vuelve y escribe el dia en espanol.");
         break;
 }

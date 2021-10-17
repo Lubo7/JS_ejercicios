@@ -12,6 +12,6 @@ for (let i = 2; i < valor_num; i++) {
 
     let valor = prompt('Give me ' + i + 'º number:');
     resultado = resultado + (valor);
+    console.log(resultado);
 }
 
-console.log(resultado);

@@ -9,7 +9,7 @@ let valor = "";
 let num_intentos = 0;
 
 do {
-    valor = window.prompt("Introduzca la contrasena");
+    valor = prompt("Introduzca la contrasena");
 
     if (contrasena == valor) {
         alert("Enhorabuena, la party puede continuar!");
@@ -19,6 +19,6 @@ do {
     }
 } while (contrasena != valor && num_intentos<3);
 
-if (contrasena != valor) {
+if (contrasena !== valor) {
     alert("No hay mas intentos")
 }

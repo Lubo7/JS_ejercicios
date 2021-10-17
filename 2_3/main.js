@@ -3,7 +3,8 @@
 // devolver true si es primo sino false. Un número primo es aquel solo puede 
 // dividirse entre 1 y sí mismo. Por ejemplo: 25 no es primo, ya que 25 es 
 // divisible entre 5, sin embargo, 17 si es primo.
-// definicion del primo: Divisible solo por su mismo y del 1. 0 y 1 no son primos
+// definicion del primo: Divisible solo por su mismo y del 1. 
+//0 y 1 no son primos
 
 let numero = prompt("Introduce el numero para descubrir si es primo o no");
 let i;

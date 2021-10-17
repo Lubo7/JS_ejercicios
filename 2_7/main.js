@@ -8,12 +8,30 @@
 // • 129.852 yenes es un 1 €
 
 
-let cantidad = prompt("Introduzca la cantidad en euros que quieres convertir a otra moneda");
-let libras = cantidad * 0.86;
-let dolares = cantidad * 1.28611;
-let yenes = cantidad * 129.852;
+const calculaMoneda = (numero, moneda) => {
+    let cambio = 0;
 
-alert(cantidad + " euros es " + libras + " libras, " + dolares  + " dolares, " + yenes + " yenes."  )
+    switch (moneda) {
+        case "libras":
+            cambio = parseFloat(numero * 0.86).toFixed(2);
+            break;
+        case "dolares":
+            cambio = parseFloat(numero * 1.28611).toFixed(2);
+            break;
+        case "yenes":
+            cambio = parseFloat(numero * 129.852).toFixed(2);
+        default:
+            break;
+    }
 
+    return cambio;
+}
+
+let numero = parseInt(prompt("Introduzca la cantidad de euros"));
+let moneda = prompt("Escribe a que moneda quieres convertir (dolares, yenes o libras): ");
+
+let resultado = calculaMoneda(numero, moneda);
+
+alert("Son " + resultado + " " + moneda);
 
 

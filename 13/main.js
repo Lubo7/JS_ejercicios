@@ -9,9 +9,24 @@
 // ^: 1o operando como base y 2o como exponente.
 // %: módulo, resto de la división entre operando1 y operando2.
 
-let int  = window.prompt('Introduzca el número');
-let string  = window.prompt('Introduzca algun letra/s');
-let operador  = window.prompt('Introduzca + - * / ^ o %');
+let int1  = prompt("Introduzca el número");
+let int2 = prompt("Introduzca segundo numero");
+let operador  = prompt("Introduzca + - * / ^ o %");
+let resultado = 0;
 
-alert(int + ' ' + operador + ' ' +  string);
+switch (operador) {
+    case "+":
+        resultado = int1 + int2;
+        break;
+    case "-":
+        resultado = int1 - int2;
+        break;
+    case "*":
+        resultado = int1 * int2;
+        break;
+    case "/":
+        resultado = int1 / int2;
+        break;
+}
+alert(int1 + int2 + ' ' + operador + ' ' +  string);
 
