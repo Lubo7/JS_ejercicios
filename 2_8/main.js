@@ -2,16 +2,23 @@
 //Muestra por consola el índice y el valor al que corresponde. Haz dos métodos, 
 //uno para rellenar valores y otro para mostrar.
 
-let i = "";
-let valor = prompt("Give me " + i+1 + "º number:");
-let valor_num = 11;
-let resultado = "";
+//Input
 
+let array = [];
 
-for (let i = 2; i < valor_num; i++) {
+//Proceso
+const rellenarArray = () =>{
+    for (let i = 1; i <= 10; i++) {
+        array.push(prompt("Introduce el número " + i + " del array."));
+    }
+};
 
-    let valor = prompt('Give me ' + i + 'º number:');
-    resultado = resultado + (valor);
-    console.log(resultado);
-}
+//Output
+const mostrarArray = () =>{
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i] + " es el valor de la posición " + i + " del array.");
+    }
+};
 
+rellenarArray();
+mostrarArray();
